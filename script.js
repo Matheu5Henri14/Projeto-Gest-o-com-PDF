@@ -26,7 +26,7 @@ function adicionar() {
 
     renderizar(novoItem);
     
-    // Limpar campos
+    
     document.getElementById('nomeFerramenta').value = '';
     document.getElementById('notaFiscal').value = '';
     document.getElementById('quantidade').value = '';

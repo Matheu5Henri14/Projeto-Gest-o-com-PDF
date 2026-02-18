@@ -58,7 +58,7 @@ input, textarea {
 .btn-pdf { background: var(--primary); color: white; margin-top: 10px; }
 .btn-del { background: var(--danger); color: white; width: auto; padding: 8px 15px; margin-top: 10px; }
 
-/* Cards */
+
 .card {
     background: var(--card-bg);
     padding: 15px;
