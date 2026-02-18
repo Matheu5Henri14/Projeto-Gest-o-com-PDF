@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Peças</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-screen">
+        <h2>Acesso Bloqueado</h2>
+        <input type="password" id="senhaInput" placeholder="Senha de 4 dígitos" inputmode="numeric">
+        <button class="btn btn-login" onclick="verificarSenha()">Entrar</button>
+    </div>
+
+    <div id="main-content">
+        <header>
+            <h3>Registro de Peças</h3>
+        </header>
+
+        <div class="form-container">
+            <input type="text" id="nomeFerramenta" placeholder="Cod. Peça">
+            
+            <div class="row">
+                <input type="text" id="notaFiscal" placeholder="Nº Nota Fiscal">
+                <input type="number" id="quantidade" placeholder="Qtd" style="flex: 0.4;">
+            </div>
+
+            <textarea id="codigoFerramenta" placeholder="Observações..." rows="3"></textarea>
+            
+            <button class="btn btn-add" onclick="adicionar()">Salvar na Lista</button>
+            <button class="btn btn-pdf" onclick="gerarPDF()">Gerar PDF com Data/Hora</button>
+        </div>
+
+        <div id="lista-ferramentas">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
